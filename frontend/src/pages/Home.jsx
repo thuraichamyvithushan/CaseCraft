@@ -130,7 +130,7 @@ const Home = () => {
       {/* About Us Section */}
       <AboutSection/>
      
-``````<HomeFAQ/>
+      <HomeFAQ/>
 <HomeTestimonials/>
       {/* CTA Section */}
       <FinalCTA/>
