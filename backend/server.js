@@ -53,6 +53,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Phone Cover Customizer API is running" });
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
+
 app.post("/create-payment-intent", async (req, res) => {
   try {
     if (!stripe) {
