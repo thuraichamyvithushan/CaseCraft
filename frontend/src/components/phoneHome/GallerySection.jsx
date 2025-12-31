@@ -8,7 +8,7 @@ import phonecase4 from "../../assets/custom/phonecase4.png"
 import phonecase5 from "../../assets/custom/phonecase5.png"
 import phonecase6 from "../../assets/custom/phonecase6.png"
 import phonecase7 from "../../assets/custom/phonecase7.png"
-import phonecase8 from "../../assets/custom/phonecase8.png"
+import phonecase8 from "../../assets/custom/Phonecase8.png"
 
 
 // Lightbox Modal Component
