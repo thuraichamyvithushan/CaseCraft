@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, Heart, X, ZoomIn } from 'lucide-react';
 
 import phonecase1 from "../../assets/custom/phonecase1.png"
-import phonecase2 from "../../assets/custom/phonecase2.png"
+import phonecase2 from "../../assets/custom/Phonecase2.png"
 import phonecase3 from "../../assets/custom/phonecase3.png"
 import phonecase4 from "../../assets/custom/phonecase4.png"
 import phonecase5 from "../../assets/custom/phonecase5.png"
