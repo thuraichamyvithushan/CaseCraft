@@ -1,19 +1,4 @@
-import app from "../server.js";
-import connectDB from "../config/db.js";
+import serverless from "serverless-http";
+import app from "../server.js";   // <-- change to your real file name
 
-let isConnected = false;
-
-const connect = async () => {
-    if (isConnected) return;
-    try {
-        await connectDB();
-        isConnected = true;
-    } catch (err) {
-        console.error("Delayed DB connection failed:", err);
-    }
-};
-
-export default async (req, res) => {
-    await connect();
-    return app(req, res);
-};
+export default serverless(app);
