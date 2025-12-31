@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import Stripe from "stripe";
-import morgan from "morgan";
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -32,12 +31,6 @@ if (process.env.STRIPE_SECRET_KEY) {
   console.warn("STRIPE_SECRET_KEY is missing. Payment features will be disabled.");
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Database
-connectDB();
-
 // Middleware
 app.use(
   cors({
@@ -46,7 +39,6 @@ app.use(
   })
 );
 app.use(express.json({ limit: "50mb" }));
-app.use(morgan("dev"));
 
 // Routes
 app.get("/", (req, res) => {
