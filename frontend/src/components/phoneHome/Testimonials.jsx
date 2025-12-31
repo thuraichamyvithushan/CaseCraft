@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Star, ArrowLeft, ArrowRight, Quote } from 'lucide-react';
 
 import phonecase9 from "../../assets/custom/phonecase9.png"
-import phonecase10 from "../../assets/custom/phonecase10.png"
+import phonecase10 from "../../assets/custom/Phonecase10.png"
 import phonecase11 from "../../assets/custom/phonecase11.png"
 import phonecase12 from "../../assets/custom/phonecase12.png"
 
