@@ -25,7 +25,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:3000";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+let stripe;
+if (process.env.STRIPE_SECRET_KEY) {
+  stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+} else {
+  console.warn("STRIPE_SECRET_KEY is missing. Payment features will be disabled.");
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -50,6 +55,9 @@ app.get("/", (req, res) => {
 
 app.post("/create-payment-intent", async (req, res) => {
   try {
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment service unavailable" });
+    }
     const { amount, currency = "usd" } = req.body; // amount in cents
     const paymentIntent = await stripe.paymentIntents.create({
       amount,
