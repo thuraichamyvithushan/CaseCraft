@@ -4,7 +4,7 @@ export const post1 = {
   id: 1,
   title: "How Handmade Gifts Create Deeper Emotional Value",
   date: "November 26, 2025",
-  author: "Easify",
+  author: "Easifyt",
   image: blogImg1,
   slug: "how-handmade-gifts-create-deeper-emotional-value",
   content: [
