@@ -4,8 +4,8 @@ const connectDB = async () => {
   const uri = process.env.MONGO_URI;
 
   if (!uri) {
-    console.error("Missing MONGO_URI in environment variables");
-    process.exit(1);
+    console.error("Missing MONGO_URI in environment variables. Database connection will be unavailable.");
+    return;
   }
 
   try {
@@ -16,7 +16,6 @@ const connectDB = async () => {
     console.log(`MongoDB connected: ${conn.connection.host}`);
   } catch (error) {
     console.error(`MongoDB connection error: ${error.message}`);
-    process.exit(1);
   }
 };
 
