@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import Stripe from "stripe";
 import dotenv from "dotenv";
-import path from "path";
 import { fileURLToPath } from "url";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
@@ -30,6 +29,9 @@ if (process.env.STRIPE_SECRET_KEY) {
 } else {
   console.warn("STRIPE_SECRET_KEY is missing. Payment features will be disabled.");
 }
+
+// Database (Start connection async)
+connectDB();
 
 // Middleware
 app.use(
