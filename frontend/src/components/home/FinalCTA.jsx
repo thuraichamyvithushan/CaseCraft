@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
+<section className="relative py-16 md:py-28 lg:py-30 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
 
       {/* Floating Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -25,7 +25,7 @@ export default function FinalCTA() {
         </div>
 
         {/* Main Headline */}
-        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-tight">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
           Ready to Make<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7245] via-pink-500 to-purple-600">
             Magic Happen?

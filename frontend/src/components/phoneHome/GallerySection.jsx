@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, Heart, X, ZoomIn } from 'lucide-react';
 
 import phonecase1 from "../../assets/custom/phonecase1.png"
-import phonecase2 from "../../assets/custom/Phonecase2.png"
+import phonecase2 from "../../assets/custom/phonecase2.png"
 import phonecase3 from "../../assets/custom/phonecase3.png"
 import phonecase4 from "../../assets/custom/phonecase4.png"
 import phonecase5 from "../../assets/custom/phonecase5.png"
 import phonecase6 from "../../assets/custom/phonecase6.png"
 import phonecase7 from "../../assets/custom/phonecase7.png"
-import phonecase8 from "../../assets/custom/Phonecase8.png"
+import phonecase8 from "../../assets/custom/phonecase8.png"
 
 
 // Lightbox Modal Component
@@ -103,7 +103,7 @@ export default function GallerySection() {
 
   return (
     <>
-      <section id="gallery" className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50">
+      <section id="gallery" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50" >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
           {/* Header */}
@@ -154,15 +154,11 @@ export default function GallerySection() {
             <button
               className="
     group inline-flex items-center
-    gap-3 md:gap-4
-    px-6 py-3 md:px-10 md:py-5
+    gap-3 md:gap-4  px-6 py-3 md:px-10 md:py-5
     bg-[#fe7245] text-white
-    text-base md:text-xl font-bold
-    rounded-full
+    text-base md:text-xl font-bold rounded-full
     shadow-2xl hover:shadow-[#fe7245]/50
-    hover:scale-105
-    transition-all duration-300
-  "
+    hover:scale-105 transition-all duration-300 "
             >
               Create Your Case Now
 

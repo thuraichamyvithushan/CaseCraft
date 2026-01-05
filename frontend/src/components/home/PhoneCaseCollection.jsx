@@ -38,7 +38,7 @@ const phoneProducts = [
 
 export default function PhoneCaseCollection() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
+<section className="py-12 md:py-24 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
@@ -58,7 +58,7 @@ export default function PhoneCaseCollection() {
         </div>
 
         {/* Modern Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {phoneProducts.map((product, index) => (
             <div

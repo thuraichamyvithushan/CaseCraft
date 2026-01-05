@@ -32,7 +32,7 @@ export default function PhoneCaseFAQ() {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-b from-white to-[#FDFBF7]">
+<section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-[#FDFBF7]">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
 
         {/* Header */}

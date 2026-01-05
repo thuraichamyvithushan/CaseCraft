@@ -41,16 +41,19 @@ export default function CategoryShowcase() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight uppercase">
+                    <div className="w-full flex flex-col items-center md:items-start text-center md:text-left">
+
+           <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight uppercase">
               Shop Categories
             </h2>
-            <p className="mt-2 text-gray-500 text-lg">Curated collections for your lifestyle.</p>
+            <p className="mt-1 sm:mt-2 md:mt-2 lg:mt-3 text-gray-500 text-base sm:text-lg md:text-lg lg:text-xl">
+            Curated collections for your lifestyle.</p>
           </div>
           <a href="#" className="hidden md:flex items-center gap-2 font-semibold text-gray-900 hover:text-gray-600 transition group">
             View All Collections

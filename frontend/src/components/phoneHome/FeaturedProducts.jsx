@@ -109,7 +109,7 @@ export default function PhoneCaseShowcase() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white">
+<section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
@@ -117,7 +117,7 @@ export default function PhoneCaseShowcase() {
           <p className="text-[#fe7245] font-bold uppercase tracking-wider text-sm mb-3">
             Most Loved This Week
           </p>
-          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-5">
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-5">
             Trending Phone Cases
           </h2>
           <div className="w-32 h-1.5 bg-gradient-to-r from-blue-900 to-[#fe7245] mx-auto rounded-full mb-6"></div>

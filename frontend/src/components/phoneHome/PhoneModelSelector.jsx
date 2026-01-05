@@ -31,17 +31,18 @@ export default function PhoneModelSelector() {
   const [activeBrand, setActiveBrand] = useState("Apple");
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+   <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-8">
 
         {/* Top Headline + Trust */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900">
-            Design a unique phone case with your own photo today
-          </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            From $14.95 • Fast & reliable shipping
-          </p>
+     <div className="text-center px-4 sm:px-6 md:px-0 mb-8 sm:mb-10 md:mb-12">
+  <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-snug">
+    Design a unique phone case with your own photo today
+  </h2>
+  <p className="mt-2 sm:mt-3 text-base sm:text-lg md:text-xl text-gray-600">
+    From $14.95 • Fast & reliable shipping
+  </p>
           <div className="mt-6 flex items-center justify-center gap-2">
             <div className="flex text-yellow-400">
               {[...Array(5)].map((_, i) => (

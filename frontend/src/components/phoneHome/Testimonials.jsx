@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Star, ArrowLeft, ArrowRight, Quote } from 'lucide-react';
 
 import phonecase9 from "../../assets/custom/phonecase9.png"
-import phonecase10 from "../../assets/custom/Phonecase10.png"
+import phonecase10 from "../../assets/custom/phonecase10.png"
 import phonecase11 from "../../assets/custom/phonecase11.png"
 import phonecase12 from "../../assets/custom/phonecase12.png"
 
@@ -71,7 +71,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-24 bg-gray-50 overflow-hidden">
+<section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50 overflow-hidden">
 
       {/* Background Blobs */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2"></div>

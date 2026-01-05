@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function AboutSection() {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
+<section className="relative py-12 md:py-24 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
 
       {/* Background Glows */}
       <div className="absolute inset-0">
@@ -19,11 +19,11 @@ export default function AboutSection() {
           {/* Left: Content (same powerful copy) */}
           <div className="space-y-10">
             <div>
-              <div className="inline-flex items-center gap-3 bg-[#fe7245]/10 text-[#fe7245] px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider mb-6 shadow-xl">
+    <div className="inline-flex items-center gap-2 sm:gap-3 bg-[#fe7245]/10 text-[#fe7245] px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-xl">
                 <HeartHandshake className="w-5 h-5" />
                 Made for Pet Parents, by Pet Parents
               </div>
-              <h2 className="text-5xl md:text-7xl font-black text-white leading-tight">
+              <h2 className="text-4xl md:text-7xl font-black text-white leading-tight">
                 We Turn Love Into<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7245] to-pink-500">
                   Everyday Magic
@@ -69,10 +69,10 @@ export default function AboutSection() {
           </div>
 
           {/* Right: 3 Floating Images — Pure Magic */}
-          <div className="relative h-[600px] lg:h-[750px]">
+          <div className="relative h-auto lg:h-[750px] mt-16 lg:mt-0 flex flex-col gap-8 lg:block">
 
             {/* Image 1 — Back Left (Biggest) */}
-            <div className="absolute top-10 left-0 w-80 lg:w-96 group">
+            <div className="relative lg:absolute lg:top-10 lg:left-0 w-full lg:w-96 group">
               <div className="absolute -inset-6 bg-gradient-to-br from-[#fe7245]/40 to-purple-600/30 rounded-3xl blur-3xl opacity-60 group-hover:opacity-90 transition-opacity duration-700" />
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80&fit=crop"
@@ -82,22 +82,22 @@ export default function AboutSection() {
             </div>
 
             {/* Image 2 — Center (Floating Forward) */}
-            <div className="absolute top-32 right-10 lg:right-20 w-72 lg:w-80 group">
+            <div className="relative lg:absolute lg:top-32 lg:right-20 w-full lg:w-80 group ml-auto lg:ml-0">
               <div className="absolute -inset-6 bg-gradient-to-tl from-pink-500/40 to-orange-500/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-90 transition-opacity" />
               <img
                 src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80&fit=crop"
                 alt="Dog sleeping on custom pet blanket"
-                className="relative rounded-3xl shadow-2xl w-full object-cover border-8 border-white/10 group-hover:scale-110 transition-transform duration-700 rotate-6 hover:rotate-3"
+                className="relative rounded-3xl shadow-2xl w-full object-cover border-8 border-white/10 group-hover:scale-110 transition-transform duration-700 rotate-2 lg:rotate-6 hover:rotate-3"
               />
             </div>
 
             {/* Image 3 — Front Right (Smallest, Tilted) */}
-            <div className="absolute bottom-10 left-20 lg:left-32 w-64 lg:w-72 group">
+            <div className="relative lg:absolute lg:bottom-10 lg:left-32 w-full lg:w-72 group">
               <div className="absolute -inset-6 bg-gradient-to-br from-cyan-500/40 to-blue-600/30 rounded-3xl blur-3xl opacity-70 group-hover:opacity-90 transition-opacity" />
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80&fit=crop"
                 alt="Custom pet bowl with name"
-                className="relative rounded-3xl shadow-2xl w-full object-cover border-8 border-white/10 group-hover:scale-110 transition-transform duration-700 -rotate-12 hover:-rotate-6"
+                className="relative rounded-3xl shadow-2xl w-full object-cover border-8 border-white/10 group-hover:scale-110 transition-transform duration-700 -rotate-2 lg:-rotate-12 hover:-rotate-6"
               />
               {/* Floating Badge */}
               <div className="absolute -top-6 -right-6 bg-[#fe7245] text-white px-6 py-3 rounded-full font-bold shadow-2xl flex items-center gap-2 animate-bounce">

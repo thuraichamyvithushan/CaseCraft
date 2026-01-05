@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function ChooseExperience() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-white via-gray-50 to-white">
+<section className="py-12 md:py-24 bg-gradient-to-b from-white via-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
@@ -13,7 +13,7 @@ export default function ChooseExperience() {
             <Sparkles className="w-5 h-5" />
             Choose Your Vibe
           </p>
-          <h2 className="text-5xl md:text-7xl font-black text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-7xl font-black text-gray-900 leading-tight">
             What Will You Create Today?
           </h2>
         </div>

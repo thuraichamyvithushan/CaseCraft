@@ -28,7 +28,7 @@ export default function PetFAQ() {
   ];
 
   return (
-    <section className="py-24 bg-[#FDFBF7]">
+   <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-[#FDFBF7]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

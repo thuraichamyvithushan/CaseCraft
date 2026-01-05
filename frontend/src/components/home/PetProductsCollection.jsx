@@ -38,7 +38,7 @@ const petProducts = [
 
 export default function PetProductsCollection() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-rose-50 via-white to-amber-50">
+<section className="py-12 md:py-24 bg-gradient-to-b from-rose-50 via-white to-amber-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
@@ -56,7 +56,7 @@ export default function PetProductsCollection() {
         </div>
 
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {petProducts.map((product, index) => (
             <div

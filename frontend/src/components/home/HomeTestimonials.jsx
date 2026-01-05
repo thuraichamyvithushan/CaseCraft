@@ -52,7 +52,7 @@ export default function HomeTestimonials() {
   const t = testimonials[currentIndex];
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
+<section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
 
       {/* Background Glows */}
       <div className="absolute inset-0 pointer-events-none">

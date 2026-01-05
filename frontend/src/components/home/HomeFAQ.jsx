@@ -32,9 +32,8 @@ export default function HomeFAQ() {
 ];
 
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-b from-white to-[#FDFBF7]">
-      <div className="max-w-5xl mx-auto px-6 lg:px-8">
-
+<section className="py-12 md:py-24 bg-gradient-to-b from-white to-[#FDFBF7]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-[#fe7245]/10 text-[#fe7245] px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider mb-4">
